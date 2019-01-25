@@ -8,7 +8,7 @@
   "scripts": {
     "dev": "rollup -c -w",
     "build": "rollup -c",
-    "release": "npm run build && cross-env-shell git commit -am \"v\"$npm_package_version && cross-env-shell git tag \"v\"$npm_package_version && git push && git push --tags && npm publish --access=public"
+    "release": "npm run build && cross-env-shell git commit -am \"v\"$npm_package_version && cross-env-shell git tag \"v\"$npm_package_version && git push && git push --tags && cross-env-shell npm publish --access=public"
   },
   "keywords": [
     "file",
